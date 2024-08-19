@@ -22,6 +22,10 @@ body {
       url("data:image/svg+xml,%3Csvg viewBox='0 0 235 235' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='3.41' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
 }
 
+#hero-text{
+    font-size: 96px;
+}
+
 p {
     font-size: 1rem;
     color:#fff;
@@ -420,31 +424,32 @@ a:visited {
 }
 
 
-/* HOME PAGE */
-/* Hero Section CSS */
-.main__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.hero {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+    
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-self: center;
-    margin: 0 auto;
-    height: auto;
-    z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    padding: 0 50px;
+    
+    /* Text styles */
+    text-align: center;
+    color: white;
+    
+    /* Background styles */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/tc23-attendees.JPG');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-.main__content h2 {
-    color: #fff;
-    font-size: 1.3rem;
-}
-
-.main__content p {
-    margin-top: 1rem;
-    font-size: 2rem;
-    font-weight: 700;
-    color: #fff;
+.hero h1 {
+    /* Text styles */
+    font-size: 5em;
+    text-shadow: 2px 2px 15px rgb(213, 42, 179);
 }
 
 .main__btn {
@@ -489,22 +494,7 @@ a:visited {
     width: 100%;
 }
 
-.main__img--container {
-    text-align: center;
-}
 
-#main__logo {
-    height: 80%;
-    width: 80%;
-    min-width: 400px;
-    margin-bottom: 1.5rem;
-}
-
-#main__img {
-    margin: 1rem;
-    height: 90%;
-    width: 90%;
-}
 
 /* Mobile Responsive */
 @media screen and (max-width: 960px) {
@@ -516,6 +506,10 @@ a:visited {
         width: 100%;
         margin: 0 auto;
         height: auto;
+    }
+
+    .hero h1{
+        font-size: 4em;
     }
 
     .main__content {
@@ -539,6 +533,10 @@ a:visited {
 @media screen and (max-width: 480px) {
     .main__container {
         padding: 0 30px;
+    }
+
+    .hero h1{
+        font-size: 3em;
     }
 
     .main__content {

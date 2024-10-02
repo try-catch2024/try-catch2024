@@ -390,9 +390,6 @@ a:visited {
     width: 100%;
 }
 
-#profile__name {
-    font-weight: bold;
-}
 
 /* PROFILE MOBILE RESPONSIVE */
 @media screen and (max-width: 1050px) {
@@ -776,6 +773,11 @@ a:visited {
     padding: 4rem 0;
 }
 
+.single__workshop--container h2 {
+    font-size: x-large; 
+    font-weight: 800;
+}
+
 .workshops h1 {
     padding-top: 3rem;
 }
@@ -985,6 +987,16 @@ a:visited {
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
+}
+
+.sponsors img {
+    width: 800px;
+    height: 1200px;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    
 }
 
 .sponsors__tier--container h2 {

@@ -483,18 +483,19 @@ a:visited {
 .main__btn {
     font-size: 1rem;
     background-color: #432c66;
+    color: white;
     padding: 14px 30px;
     border: none;
     border-radius: 15px;
     margin-top: 1rem;
-    cursor: pointer;
-    position: relative;
+    /* cursor: pointer;
+    position: relative; */
     transition: all 0 0.35s;
     outline: none;
     margin-bottom: 100px;
 }
 
-.main__btn a {
+/* .main__btn a {
     position: relative;
     z-index: 2;
     color: #fff;
@@ -521,7 +522,7 @@ a:visited {
 
 .main__btn:hover:after {
     width: 100%;
-}
+} */
 
 
 
